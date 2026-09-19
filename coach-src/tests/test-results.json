@@ -1,0 +1,382 @@
+{
+  "generated_at": "2026-09-19T20:02:39.317Z",
+  "total": 73,
+  "passed": 65,
+  "failed": 0,
+  "skipped": 8,
+  "results": [
+    {
+      "id": "MIG-01",
+      "name": "v:2 historique n'est pas la V2 cible",
+      "status": "SKIP",
+      "error": "fixture historique absente du paquet"
+    },
+    {
+      "id": "MIG-02",
+      "name": "inventaire réel entièrement conservé",
+      "status": "SKIP",
+      "error": "fixture historique absente du paquet"
+    },
+    {
+      "id": "MIG-03",
+      "name": "un agrégat 3 séries ne fabrique aucune série détaillée",
+      "status": "SKIP",
+      "error": "fixture historique absente du paquet"
+    },
+    {
+      "id": "MIG-04",
+      "name": "les quatre charges réelles de presse sont préservées",
+      "status": "SKIP",
+      "error": "fixture historique absente du paquet"
+    },
+    {
+      "id": "MIG-05",
+      "name": "les exercices historiquement ambigus restent non résolus",
+      "status": "SKIP",
+      "error": "fixture historique absente du paquet"
+    },
+    {
+      "id": "MIG-06",
+      "name": "shrugs partenaire à 12 reste brut et annoté",
+      "status": "SKIP",
+      "error": "fixture historique absente du paquet"
+    },
+    {
+      "id": "MIG-07",
+      "name": "réimport identique produit les mêmes identifiants métier",
+      "status": "SKIP",
+      "error": "fixture historique absente du paquet"
+    },
+    {
+      "id": "MIG-08",
+      "name": "une migration invalide ne modifie pas le jeu actif",
+      "status": "PASS"
+    },
+    {
+      "id": "MIG-09",
+      "name": "même sessionId ancien reste séparé par profil",
+      "status": "PASS"
+    },
+    {
+      "id": "MIG-10",
+      "name": "export V2 conserve l'identité canonique",
+      "status": "SKIP",
+      "error": "fixture historique absente du paquet"
+    },
+    {
+      "id": "MIG-11",
+      "name": "conflit visible et champ futur inconnu préservé",
+      "status": "PASS"
+    },
+    {
+      "id": "SET-01",
+      "name": "START/END répétés restent idempotents",
+      "status": "PASS"
+    },
+    {
+      "id": "SET-02",
+      "name": "END_SET reste distinct de recorded_at",
+      "status": "PASS"
+    },
+    {
+      "id": "SET-03",
+      "name": "RIR zéro, inconnu et absent sont distincts",
+      "status": "PASS"
+    },
+    {
+      "id": "SET-04",
+      "name": "approches et travail gardent des rôles séparés",
+      "status": "PASS"
+    },
+    {
+      "id": "SET-05",
+      "name": "unilatéral crée deux observations par groupe sans doubler la cible",
+      "status": "PASS"
+    },
+    {
+      "id": "SET-06",
+      "name": "événements restent attachés au profil d'origine",
+      "status": "PASS"
+    },
+    {
+      "id": "SET-CORRECTION",
+      "name": "une correction garde l'identité et une trace de révision",
+      "status": "PASS"
+    },
+    {
+      "id": "TIME-01",
+      "name": "durée séance exacte entre START et END",
+      "status": "PASS"
+    },
+    {
+      "id": "TIME-02",
+      "name": "reprise dérive le temps de l'horodatage",
+      "status": "PASS"
+    },
+    {
+      "id": "TIME-03",
+      "name": "série active survit à une sérialisation",
+      "status": "PASS"
+    },
+    {
+      "id": "TIME-04",
+      "name": "pause vélo suspend le bloc mais pas le chrono séance",
+      "status": "PASS"
+    },
+    {
+      "id": "TIME-05",
+      "name": "repos réel commence à END_SET et peut dépasser la cible",
+      "status": "PASS"
+    },
+    {
+      "id": "TIME-06",
+      "name": "deux fins sans début suivant ne donnent aucun repos réel",
+      "status": "PASS"
+    },
+    {
+      "id": "TIME-07",
+      "name": "Copenhagen apparie le même côté malgré l'autre côté intercalé",
+      "status": "PASS"
+    },
+    {
+      "id": "TIME-08",
+      "name": "horloge inversée devient CLOCK_ANOMALY",
+      "status": "PASS"
+    },
+    {
+      "id": "TIME-09",
+      "name": "les timers restent utilisables sans API de signal ou wake lock",
+      "status": "PASS"
+    },
+    {
+      "id": "CARD-01",
+      "name": "corde = 7 étapes et 270 secondes",
+      "status": "PASS"
+    },
+    {
+      "id": "CARD-02",
+      "name": "une phase corde passée n'est pas créditée",
+      "status": "PASS"
+    },
+    {
+      "id": "CARD-03",
+      "name": "vélo V1 = 9 étapes, 4 efforts et 1320 secondes",
+      "status": "PASS"
+    },
+    {
+      "id": "CARD-04",
+      "name": "ancienne recette littérale vaut 1440 secondes",
+      "status": "PASS"
+    },
+    {
+      "id": "CARD-05",
+      "name": "arrêt à 14 minutes reste SHORTENED",
+      "status": "PASS"
+    },
+    {
+      "id": "CARD-06",
+      "name": "vélo passé ne modifie pas le résultat musculation",
+      "status": "PASS"
+    },
+    {
+      "id": "CARD-07",
+      "name": "avance après plusieurs frontières ne duplique pas les phases",
+      "status": "PASS"
+    },
+    {
+      "id": "CARD-08",
+      "name": "fin du guidage ne confirme pas automatiquement le réalisé",
+      "status": "PASS"
+    },
+    {
+      "id": "PROG-01",
+      "name": "20 kg 10/10/9 propose ADD_REP",
+      "status": "PASS"
+    },
+    {
+      "id": "PROG-02",
+      "name": "paliers 20→23 et 4→7 sont réels",
+      "status": "PASS"
+    },
+    {
+      "id": "PROG-03",
+      "name": "aucune donnée = calibration sans hausse",
+      "status": "PASS"
+    },
+    {
+      "id": "PROG-04",
+      "name": "variation et drop-off utilisent première/dernière",
+      "status": "PASS"
+    },
+    {
+      "id": "PROG-05",
+      "name": "variantes et bandes gardent des contextes distincts sans kg fictif",
+      "status": "PASS"
+    },
+    {
+      "id": "PROG-06",
+      "name": "repère partenaire 3×5 ne crée aucune série",
+      "status": "PASS"
+    },
+    {
+      "id": "PROG-07",
+      "name": "première traction partenaire ne propose pas de lest",
+      "status": "PASS"
+    },
+    {
+      "id": "PROG-08",
+      "name": "adaptation Base vers Courte conserve le réalisé sans faux crédit",
+      "status": "PASS"
+    },
+    {
+      "id": "PROG-09",
+      "name": "C Base/15/11 et triceps conservé",
+      "status": "PASS"
+    },
+    {
+      "id": "PLAN-01",
+      "name": "ordres A/B/C/Jambes conformes",
+      "status": "PASS"
+    },
+    {
+      "id": "PLAN-02",
+      "name": "totaux hebdomadaires de référence",
+      "status": "PASS"
+    },
+    {
+      "id": "PLAN-03",
+      "name": "un seul complément C à la fois",
+      "status": "PASS"
+    },
+    {
+      "id": "PLAN-04",
+      "name": "extension triceps remplace sans s'ajouter",
+      "status": "PASS"
+    },
+    {
+      "id": "PLAN-05",
+      "name": "instantané de séance ne change pas après réglage",
+      "status": "PASS"
+    },
+    {
+      "id": "PLAN-06",
+      "name": "une seule jambes et RETURN sans Bas A",
+      "status": "PASS"
+    },
+    {
+      "id": "BODY-01",
+      "name": "un relevé partiel est valide",
+      "status": "PASS"
+    },
+    {
+      "id": "BODY-02",
+      "name": "vide, zéro et décimale française sont traités honnêtement",
+      "status": "PASS"
+    },
+    {
+      "id": "BODY-03",
+      "name": "les deux profils et deux relevés du même jour restent séparés",
+      "status": "PASS"
+    },
+    {
+      "id": "MODE-01",
+      "name": "TEST annulé reste conservé et identifiable",
+      "status": "PASS"
+    },
+    {
+      "id": "MODE-02",
+      "name": "readiness non entré, inconnu et zéro restent distincts",
+      "status": "PASS"
+    },
+    {
+      "id": "WARM-01",
+      "name": "blocs hauts gardent échauffement sans cardio déguisé",
+      "status": "PASS"
+    },
+    {
+      "id": "WARM-02",
+      "name": "préparation, approches, corde et vélo restent des catégories séparées",
+      "status": "PASS"
+    },
+    {
+      "id": "WARM-03",
+      "name": "retour terrain ne fabrique aucune durée d'échauffement",
+      "status": "PASS"
+    },
+    {
+      "id": "UX-BIKE-01",
+      "name": "vélo n'a jamais deux efforts consécutifs",
+      "status": "PASS"
+    },
+    {
+      "id": "UX-BIKE-02",
+      "name": "après 5 min facile la phase suivante est un effort puis une récupération",
+      "status": "PASS"
+    },
+    {
+      "id": "UX-REST-01",
+      "name": "unilatéral : pas de repos long entre gauche et droite de la même série",
+      "status": "PASS"
+    },
+    {
+      "id": "UX-REST-02",
+      "name": "dernière série d'un exercice = transition vers l'exercice suivant",
+      "status": "PASS"
+    },
+    {
+      "id": "UX-TEST-01",
+      "name": "mode TEST raccourcit le repos affiché sans en faire une perf",
+      "status": "PASS"
+    },
+    {
+      "id": "UX-TEST-02",
+      "name": "vélo TEST compresse les phases à 5 s sans changer la recette TRAINING",
+      "status": "PASS"
+    },
+    {
+      "id": "UX-LOAD-01",
+      "name": "repère historique 20 kg apparaît pour l'incliné Mathieu",
+      "status": "PASS"
+    },
+    {
+      "id": "UX-LOAD-02",
+      "name": "charge saisie manuellement reste enregistrée",
+      "status": "PASS"
+    },
+    {
+      "id": "UX-UNI-01",
+      "name": "gauche et droite d'une série restent sauvegardés séparément",
+      "status": "PASS"
+    },
+    {
+      "id": "UX-SEP-01",
+      "name": "dataset Mathieu ne contient pas Ryan",
+      "status": "PASS"
+    },
+    {
+      "id": "UX-SEP-02",
+      "name": "extract dual → Mathieu ne copie pas Ryan",
+      "status": "PASS"
+    },
+    {
+      "id": "UX-COURSE-01",
+      "name": "futsal enregistrable sans distance",
+      "status": "PASS"
+    },
+    {
+      "id": "UX-LABELS-01",
+      "name": "jargon interne traduit",
+      "status": "PASS"
+    },
+    {
+      "id": "UX-HAUTA-01",
+      "name": "une séance Haut A se démarre et se termine",
+      "status": "PASS"
+    },
+    {
+      "id": "REG-01",
+      "name": "export, profils, programmes et données principales valident ensemble",
+      "status": "PASS"
+    }
+  ]
+}

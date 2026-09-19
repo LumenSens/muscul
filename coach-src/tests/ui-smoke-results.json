@@ -1,0 +1,24 @@
+{
+  "generated_at": "2026-09-18T05:07:46.180Z",
+  "passed": 17,
+  "failed": 0,
+  "checks": [
+    "accueil et quatre séances",
+    "Haut C Base 13 proposé",
+    "séance et chrono ouverts",
+    "START/END ouvre saisie et repos",
+    "série réelle enregistrée",
+    "correction visible sans nouvelle série",
+    "annulation conservée",
+    "C15 ajoute seulement shrugs",
+    "mensuration partielle enregistrée",
+    "profil partenaire séparé",
+    "limites wake lock visibles",
+    "timer utilisable sans wake lock",
+    "UX-01 parcours mobile simulé",
+    "aucune erreur JavaScript",
+    "archive réelle migrée et consultable",
+    "détail ancien honnête",
+    "migration UI sans erreur JavaScript"
+  ]
+}
